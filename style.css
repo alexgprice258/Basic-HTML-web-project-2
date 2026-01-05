@@ -15,3 +15,35 @@ nav a {
   border: 1px solid white;
   margin-right: 8px;
 }
+/* spacing */
+header { padding: 16px 0; }
+main { padding: 20px 0; }
+section { border: 1px solid white; padding: 16px; margin: 16px 0; }
+
+/* responsive nav (wraps nicely on small screens) */
+nav { display: flex; flex-wrap: wrap; gap: 8px; }
+nav a { margin-right: 0; }
+
+/* form styling (for contact page) */
+form { display: grid; gap: 12px; margin-top: 12px; }
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 8px;
+  background: black;
+  color: white;
+}
+button {
+  padding: 10px 12px;
+  border: 1px solid white;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* desktop tweak */
+@media (min-width: 768px) {
+  nav a { padding: 10px 14px; }
+}
